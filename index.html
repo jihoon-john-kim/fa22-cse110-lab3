@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="meeting minutes" charset="UTF-8">
+    <meta name="meeting minutes">
     <link rel="icon" type="image/png" sizes="32x32" href="screenshots/favicon-32x32.png">
     <title>Team 21's 1st Meeting</title>
   </head>
@@ -51,11 +51,11 @@
         <details>
           <summary>SweetPotato Kim</summary>
           <p>I will be a delicious <em>sweet potato pie</em>.</p>
-          <img src="screenshots/Sweet Potato.jpg" alt="SweetPotato Kim" width="500" height="600">
+          <img src="screenshots/SweetPotato.jpg" alt="SweetPotato Kim" width="500" height="600">
         </details>
       </section>
       <hr>
-        <section>       
+      <section>       
         <h3>Greeting record</h3>
         <ul>
           <li>
@@ -68,11 +68,11 @@
           <li>
             <p>video : </p>
             <video width="320" height="240" controls>
-              <source src="media/Ji's work out.mp4" type="video/mp4">
+              <source src="media/Ji_work_out.mp4ut.mp4" type="video/mp4">
               Your browser does not support HTML video.
             </video>
           </li>
-        </ol>
+        </ul>
       </section>
       <hr>
       <section>  
@@ -80,18 +80,18 @@
         <details>
           <summary>Roll call :</summary>
           <form action="/action_page.php">
-            <label for="roll call">Ji Hoon Kim :</label>
-            <select name="status" id="status">
+            <label for="rollCall">Ji Hoon Kim :</label>
+            <select name="statusJ" id="statusJ">
               <option value="attendance">Attendance</option>
               <option value="absent">Absent</option>
             </select>
-            <br><label for="cars">Potato Kim :</label>
-            <select name="status" id="status">
+            <br><label for="statusP">Potato Kim :</label>
+            <select name="statusP" id="statusP">
               <option value="attendance">Attendance</option>
               <option value="absent">Absent</option>
             </select>
-            <br><label for="cars">SweetPotato Kim :</label>
-            <select name="status" id="status">
+            <br><label for="statusS">SweetPotato Kim :</label>
+            <select name="statusS" id="statusS">
               <option value="attendance">Attendance</option>
               <option value="absent">Absent</option>
             </select>
@@ -110,13 +110,12 @@
         <form action="/action_page.php">
           <fieldset>
           <p>We will call you.</p>
-          <legend>Information:</legend>
           <label for="fname">First name:</label>
           <input type="text" id="fname" name="fname"><br><br>
           <label for="lname">Last name:</label>
           <input type="text" id="lname" name="lname"><br><br>
           <label for="phone">Phone:</label>
-          <input type="phone" id="phone" name="phone"><br><br>
+          <input type="text" id="phone" name="phone"><br><br>
           <label for="email">Email:</label>
           <input type="email" id="email" name="email"><br><br>
           <textarea id="comment" name="comment" rows="4" cols="50">Any comment?</textarea><br><br>
