@@ -1,2 +1,2 @@
-Meeting Rules
-![ruleSignUp](media/rules-jihoonkim.png)
+# Meeting Rules
+![ruleSignUp](../media/rules-jihoonkim.png)
