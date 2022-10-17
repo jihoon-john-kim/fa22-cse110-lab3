@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+/*universal*/
+h1, h2 {
+    text-decoration: underline;
+}
+* {
+    font-family: "Pacifico", sans-serif;
+}
+details:hover {
+    color: blue;  
+  }
+button:active{
+    background-color: red;
+  }
+span {
+    color: hsl(80,30,80);
+  }
+div {
+    display: inline;
+}
+/* header */
+header{
+    position: fixed;
+    background-color: rgb(220, 255, 255);
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+#title_H {
+    max-height: 15pt;
+    color: rgb(30, 30, 30);
+    font-size: 3vw;
+    margin-bottom: .2rem
+    }
+#date_H {
+    min-height: 30pt;
+    color: rgb(30, 30, 30);
+    font-size: 2vw;
+    margin-bottom: .2rem
+   }
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(30, 30, 30);
+    font-size: 1.8vw;
+    margin-bottom: .2rem
+}
+.nav a{
+    display: inline-block;
+    padding: 10px;
+    color: #252525
+}
+p .me{
+    color: aquamarine;
+}
+
+/*main*/
+main {
+    margin-top : 28vh;
+    height: 100%;  
+    background-color: rgb(252, 191, 249);
+    padding: 0 0 0 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-row: 6;
+  }
+main section {
+    text-align: center;
+    border: solid;
+    border-width: 3pt;
+    border-color: green;
+    padding: 10pt;
+    background-color: antiquewhite;
+}
+#agenda {    
+    border-top-right-radius: 2rem 15%;
+    border-bottom-left-radius: 2rem 15%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin: 10% 10% 10% 10%
+}
+#todo {    
+    border-top-right-radius: 2rem 15%;
+    border-bottom-left-radius: 2rem 15%;
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+#todo li[id^="notYet"]{
+    text-decoration: none;
+}
+#todo li { 
+    text-decoration: line-through;
+}
+b ~ i {
+    text-decoration: line-through;
+}
+h1 + h2 {
+    text-decoration: none;
+}
+
+#who {
+    border: double;
+    border-color: yellowgreen;
+    border-width: 7pt;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+#who summary{
+    color: blueviolet;
+}
+#greeting {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin: auto;
+    padding: 0 20% 0 20%;
+}
+#attendance {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin-top: 10%;
+}
+
+/*footer*/
+footer{
+    position: sticky;
+    background-color: rgb(255, 252, 220);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+footer>p{
+    font-size: 8pt;
+    margin: 3mm 0 0 2mm;
+}
+footer>details{
+    background-color: rgb(192, 175, 254);
+    font-size: 0.4cm;
+}
+footer>details>summary{
+    font-size: 12px;
+}
+
+
+@media (max-width: 600px){
+    * {
+        font-family: sans-serif;
+    }
+}
